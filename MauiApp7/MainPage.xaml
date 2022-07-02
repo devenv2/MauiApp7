@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:drawable="clr-namespace:MauiApp7"
+              x:Class="MauiApp7.MainPage">
+    <ContentPage.Resources>
+        <drawable:GraphicsDrawable x:Key="drawable" />
+    </ContentPage.Resources>
+    <StackLayout>
+        
+    <VerticalStackLayout>
+        <GraphicsView x:Name="graphicsView" Drawable="{StaticResource drawable}"
+                       HeightRequest="300"
+                       WidthRequest="400" />
+    </VerticalStackLayout>
+    <Entry x:Name="entText"/>
+    <Button Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>
