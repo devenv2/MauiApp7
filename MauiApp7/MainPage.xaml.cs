@@ -1,4 +1,6 @@
-﻿namespace MauiApp7;
+﻿using System.Diagnostics;
+
+namespace MauiApp7;
 
 public partial class MainPage : ContentPage
 {
@@ -11,8 +13,12 @@ public partial class MainPage : ContentPage
     {
         var draw = new GraphicsDrawable
         {
-            Text = "Hello"
+            Text = entText.Text
+
         };
+
+        Debug.WriteLine("MainPage: " + draw.Text);
+
         GraphicsDrawable drawable = new GraphicsDrawable();
         graphicsView.Invalidate();
     }
